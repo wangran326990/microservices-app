@@ -7,6 +7,11 @@
       <option name="url" value="https://maven.pkg.github.com/FlutterInt/fips-flstudios-gdkplatform" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="github" />
+      <option name="name" value="github" />
+      <option name="url" value="https://maven.pkg.github.com/FlutterInt/fsp-cayetano-server-framework" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="serverinterfaces" />
       <option name="name" value="serverinterfaces" />
       <option name="url" value="https://maven.pkg.github.com/FlutterInt/fips-flstudios-gdkserverinterfaces" />
