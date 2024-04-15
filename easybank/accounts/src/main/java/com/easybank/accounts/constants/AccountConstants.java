@@ -18,5 +18,11 @@ public class AccountConstants {
 
     public static final String MESSAGE_500= "An error occurred Please try again later.";
 
+    public static final String STATUS_417="417";
+
+
+    public static final String MESSAGE_417_UPDATE="An error occurred during updating";
+
+    public static final String MESSAGE_417_DELETE="An error occurred during delete";
 
 }
