@@ -2,11 +2,6 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
-      <option name="id" value="gdkplatform" />
-      <option name="name" value="gdkplatform" />
-      <option name="url" value="https://maven.pkg.github.com/FlutterInt/fips-flstudios-gdkplatform" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="github" />
       <option name="name" value="github" />
       <option name="url" value="https://maven.pkg.github.com/FlutterInt/fsp-cayetano-server-framework" />
@@ -25,11 +20,6 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="github" />
-      <option name="name" value="github" />
-      <option name="url" value="https://maven.pkg.github.com/FlutterInt/fsp-coregaming-cg-framework" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
