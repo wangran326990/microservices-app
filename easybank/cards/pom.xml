@@ -65,7 +65,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>wnagran107/${project.artifactId}:s4</name>
+						<name>wangran107/${project.artifactId}:s4</name>
 					</image>
 					<excludes>
 						<exclude>
