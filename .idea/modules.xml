@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/easybank/accounts/accounts.iml" filepath="$PROJECT_DIR$/easybank/accounts/accounts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybank/cards/cards.iml" filepath="$PROJECT_DIR$/easybank/cards/cards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easybank/loans/loans.iml" filepath="$PROJECT_DIR$/easybank/loans/loans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservices-app.iml" filepath="$PROJECT_DIR$/.idea/microservices-app.iml" />
+    </modules>
+  </component>
+</project>
