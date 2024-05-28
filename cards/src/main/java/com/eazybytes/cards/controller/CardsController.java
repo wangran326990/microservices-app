@@ -37,13 +37,17 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class CardsController {
 
-    @Autowired
     private ICardsService iCardsService;
+
+    public CardsController(ICardsService iCardsService) {
+        this.iCardsService = iCardsService;
+    }
+
+    @Value("${build.version}")
+    private String buildVersion;
 
     @Autowired
     private Environment environment;
-    @Value("${build.version}")
-    private String buildVersion;
 
     @Autowired
     private CardsContactInfoDto cardsContactInfoDto;
@@ -174,8 +178,8 @@ public class CardsController {
     }
 
     @Operation(
-            summary = "Fetch Build Info",
-            description = "Get Build information that is deployed into accounts microservice"
+            summary = "Get Build information",
+            description = "Get Build information that is deployed into cards microservice"
     )
     @ApiResponses({
             @ApiResponse(
@@ -189,17 +193,18 @@ public class CardsController {
                             schema = @Schema(implementation = ErrorResponseDto.class)
                     )
             )
-    })
+    }
+    )
     @GetMapping("/build-info")
-
-    public ResponseEntity<String> getBuildInfo(){
-        return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
+    public ResponseEntity<String> getBuildInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(buildVersion);
     }
 
-
     @Operation(
-            summary = "Fetch Java Version",
-            description = "Get Build information that is deployed into accounts microservice"
+            summary = "Get Java version",
+            description = "Get Java versions details that is installed into cards microservice"
     )
     @ApiResponses({
             @ApiResponse(
@@ -213,16 +218,18 @@ public class CardsController {
                             schema = @Schema(implementation = ErrorResponseDto.class)
                     )
             )
-    })
+    }
+    )
     @GetMapping("/java-version")
-
-    public ResponseEntity<String> getJavaVersion(){
-        return ResponseEntity.status(HttpStatus.OK).body(environment.getProperty("JAVA_HOME"));
+    public ResponseEntity<String> getJavaVersion() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(environment.getProperty("JAVA_HOME"));
     }
 
     @Operation(
-            summary = "Get Contact info",
-            description = "Get Contact info that is deployed into accounts microservice"
+            summary = "Get Contact Info",
+            description = "Contact Info details that can be reached out in case of any issues"
     )
     @ApiResponses({
             @ApiResponse(
@@ -236,11 +243,13 @@ public class CardsController {
                             schema = @Schema(implementation = ErrorResponseDto.class)
                     )
             )
-    })
+    }
+    )
     @GetMapping("/contact-info")
-
-    public ResponseEntity<CardsContactInfoDto> getContactInfo(){
-        return ResponseEntity.status(HttpStatus.OK).body(cardsContactInfoDto);
+    public ResponseEntity<CardsContactInfoDto> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(cardsContactInfoDto);
     }
 
 }
