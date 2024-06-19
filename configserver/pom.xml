@@ -67,7 +67,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<to>
-						<image>wangran107/${project.artifactId}:s11</image>
+						<image>wangran107/${project.artifactId}:s12</image>
 					</to>
 				</configuration>
 			</plugin>
