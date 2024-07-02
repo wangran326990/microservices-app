@@ -67,7 +67,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<to>
-						<image>wangran107/${project.artifactId}:s13</image>
+						<image>eazybytes/${project.artifactId}:s14</image>
 					</to>
 				</configuration>
 			</plugin>
