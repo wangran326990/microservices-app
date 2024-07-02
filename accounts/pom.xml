@@ -119,7 +119,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<to>
-						<image>eazybytes/${project.artifactId}:s14</image>
+						<image>wangran107/${project.artifactId}:s14</image>
 					</to>
 				</configuration>
 			</plugin>
