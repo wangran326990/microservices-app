@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: configserver
-        image: wangran107/configserver:s12
+        image: wangran107/configserver:s14
         ports:
         - containerPort: 8071
 ---
